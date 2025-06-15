@@ -1,0 +1,280 @@
+/* --------------------------------------
+   Base Styles - Pastel Theme
+--------------------------------------- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fefefe;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* --------------------------------------
+   Header & Navigation
+--------------------------------------- */
+header {
+    background: linear-gradient(to right, #a0c4ff, #bdb2ff); /* Pastel blue to purple */
+    color: #333;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffafcc; /* pastel pink hover */
+}
+
+/* --------------------------------------
+   Footer
+--------------------------------------- */
+footer {
+    background-color: #cdb4db;
+    color: #333;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 60px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* --------------------------------------
+   Flash Messages
+--------------------------------------- */
+.flash.success {
+    background-color: #d0f4de; /* pastel green */
+    color: #355e3b;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.flash.danger {
+    background-color: #ffccd5; /* pastel red/pink */
+    color: #900c3f;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.flash.info {
+    background-color: #caf0f8; /* pastel blue */
+    color: #0077b6;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* --------------------------------------
+   Forms (Login/Register)
+--------------------------------------- */
+.login-box,
+.register-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff0f3; /* pastel pink background */
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.login-box h2,
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6a4c93;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* --------------------------------------
+   Register Page Extras
+--------------------------------------- */
+.register-container p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register-container a {
+    color: #6a4c93;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+/* --------------------------------------
+   Buttons
+--------------------------------------- */
+.button {
+    background-color: #a3c4f3; /* pastel blue */
+    color: #333;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #90dbf4; /* lighter pastel blue */
+}
+
+.button-small {
+    font-size: 12px;
+    padding: 6px 12px;
+    border: none;
+    background-color: #ffafcc; /* pastel pink */
+    color: #333;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button-small:hover {
+    background-color: #ffc8dd;
+}
+
+.button-clear {
+    background-color: #fcd5ce; /* pastel peach */
+}
+
+.button-clear:hover {
+    background-color: #fae1dd;
+}
+
+.button-delete {
+    background-color: #ffb3c1;
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.button-delete:hover {
+    background-color: #ff8fab;
+}
+
+/* --------------------------------------
+   Task Section
+--------------------------------------- */
+.task-box {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.task-form input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+.task-form .button {
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+/* --------------------------------------
+   Task Table
+--------------------------------------- */
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.task-table th,
+.task-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-table th {
+    background-color: #f1f0ff; /* pastel light purple */
+}
+
+/* --------------------------------------
+   Status Badges
+--------------------------------------- */
+.badge {
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+}
+
+.badge.pending {
+    background-color: #ffb3c1; /* soft pink */
+}
+
+.badge.working {
+    background-color: #b5ead7; /* soft green */
+    color: #333;
+}
+
+.badge.done {
+    background-color: #caffbf; /* soft lime */
+    color: #333;
+}
